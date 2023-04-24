@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -16,6 +17,7 @@ header{
     position:fixed;
     width: 100%;
     color: #fff;
+    z-index: 2;
 }
 .tituloJogo{
     font-family: 'Cardo', serif;
@@ -50,7 +52,8 @@ header{
     justify-content: center;
     height: 100vh;
     font-family: 'Special Elite', cursive;
-    background-color: #000;
+    background-image: url(/imgs/13239016_17Z_2102.w026.n002.180B.p1.180.jpg);
+    background-size: cover;
     color: #fff;
 }
 .bemVindo{
@@ -65,24 +68,87 @@ header{
 #Historia{
     height: 100vh;
     color: #fff;
+    padding: 3rem;
+
 }
 .historiaJogo{
+    font-family: 'Special Elite', cursive;
     text-align: center;
     color: #f00;
 }
+.objetosModoHistoria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caveira{
+    display: flex;
+}
+.cicruloAnimado{
+    position:relative;
+    border: #f00 solid;
+    height: 210px;
+    width: 210px;
+    box-shadow: #f00 0px 0px 10px 10px;
+    animation: rotacao 10s infinite;
+    
+}
+.cicruloNaoAnimado{
+    position:relative;
+    top: 20px;
+    left: -37.5%;
+    border: #f00 double;
+    height: 170px;
+    width: 170px;
+    box-shadow: #f00 1px 1px 10px 10px;
+}
+.imgCaveira{
+    position:relative;
+    height: 130px;
+    top: 40px;
+    left: -66.5% ;
+}
 .carta{
+ 
+    opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 3rem;  
     animation: go-back 1s infinite alternate;
 }
+.js-tabcontent section.ativo {
+    display: block !important;
+    animation: show .5s forwards;
+  }
+  
+  @keyframes show {
+    from {
+      opacity: 0;
+      transform: translate3d(-30px, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+.js-scroll {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+    transition: 1s;
+  }
+  
+.js-scroll.ativo {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 .historiaDojogo{
+    font-family: 'Special Elite', cursive;
     font-size: .60rem;
     position: absolute;
-    left: 100;
-    margin-top: 7rem;
-    width: 230px;
+    margin-top: 5rem;
+    margin-right: 1rem;
+    width: 200px;
     text-align: center;
     color: rgb(27, 27, 27);
     -moz-transform: translate(2px, -6px) skew(-6deg, -3deg);
@@ -93,7 +159,7 @@ header{
     z-index: 0;
 }
 .imagemCarta{
-    height: 420px;
+    height: 350px;
     -moz-transform: translate(2px, -6px) skew(-6deg, -3deg);
     -webkit-transform: translate(2px, -6px) skew(-6deg, -3deg);
     -o-transform: translate(2px, -6px) skew(-6deg, -3deg);
@@ -101,7 +167,33 @@ header{
     transform: translate(2px, -6px) skew(-6deg, -3deg);
     z-index: 0;
 }
+#Interface{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
+.interfaceTitulo{
+    font-family: 'Special Elite', cursive;
+    text-align: center;
+    color: #f00;
+}
+.interfaceContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.interface{
+    color: #f00;
+    list-style: georgian;
+
+}
+.imgInterface{
+    border: #f00 2px solid ;
+    border-radius: 1rem;
+    height: 250px;
+    width: 450px;
+}
 @keyframes go-back {
     from {
       transform: translatey(5px);
@@ -110,6 +202,14 @@ header{
       transform: translatey(0);
     }
   }
+@keyframes rotacao {
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
 @keyframes aparecer{
     to{
         opacity: 1;
@@ -117,4 +217,89 @@ header{
     from{
         opacity: 0;
     }
+}
+
+
+
+
+
+
+
+#Divisao{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.atoTitulo{
+    font-family: 'Special Elite', cursive;
+    text-align: center;
+    color: #f00;
+}
+.sobreAto{
+    font-family: 'Special Elite', cursive;
+    text-align: center;
+    color: #fff;
+}
+.listaDeAtos{
+    display: flex;
+    justify-content: space-evenly;
+}
+.atos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 200px;
+    color: #f00;
+    border: solid 2px #f00;
+    border-radius: 1rem;
+    font-family: 'Special Elite', cursive;
+}
+#ato1:hover{
+    background-image: url(/imgs/13239016_17Z_2102.w026.n002.180B.p1.180.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 5s;
+}
+#ato2:hover{
+    background-image: url(/imgs/24Z_2103.w026.n002.244B.p1.244.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 5s;
+}
+#ato3:hover{
+    background-image: url(/imgs/40Z_2105.w026.n002.450B.p0.450.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 5s;
+}
+#ato4:hover{
+    background-image: url(/imgs/2212.w015.n003.1098A.p30.1098.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 5s;
+}
+#ato5:hover{
+    background-image: url(/imgs/v903-techi-34b.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 5s;
+}
+
+#Items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+}
+.tituloItems{
+    font-family: 'Special Elite', cursive;
+    text-align: center;
+    color: #f00;
+}
+.sobreItems{
+    font-family: 'Special Elite', cursive;
+    color: #fff;
+    text-align: center;
 }

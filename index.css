@@ -194,36 +194,6 @@ header{
     height: 250px;
     width: 450px;
 }
-@keyframes go-back {
-    from {
-      transform: translatey(5px);
-    }
-    to {
-      transform: translatey(0);
-    }
-  }
-@keyframes rotacao {
-    from{
-        transform: rotate(0turn);
-    }
-    to{
-        transform: rotate(1turn);
-    }
-}
-@keyframes aparecer{
-    to{
-        opacity: 1;
-    }
-    from{
-        opacity: 0;
-    }
-}
-
-
-
-
-
-
 
 #Divisao{
     height: 100vh;
@@ -249,6 +219,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #111;
     height: 350px;
     width: 200px;
     color: #f00;
@@ -287,10 +258,13 @@ header{
     transition: 5s;
 }
 
+
+
+
 #Items{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 100vh;
 }
 .tituloItems{
@@ -302,4 +276,126 @@ header{
     font-family: 'Special Elite', cursive;
     color: #fff;
     text-align: center;
+}
+.ItemsLista{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.tiposItems{
+    font-family: 'Special Elite', cursive;
+    color: #f00;
+}
+.armas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.imgItens{
+    height: 30px;
+}
+.utilizaveis{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: #000;
+    border: solid 2px #f00;
+    border-radius: 1rem;
+    color: #f00;
+    font-family: 'Special Elite', cursive;
+    margin: .4rem;
+    transform: scale(1);
+    transition: .5s;
+}
+.item:hover{
+    transform: scale(1.2);
+    transition: .5s;
+}
+.item:not(:hover){
+    opacity: 0.75;
+    transition: .5s;
+  }
+
+
+@keyframes go-back {
+    from {
+      transform: translatey(5px);
+    }
+    to {
+      transform: translatey(0);
+    }
+  }
+@keyframes rotacao {
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+@keyframes aparecer{
+    to{
+        opacity: 1;
+    }
+    from{
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+#Tecno{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.tituloTecnologias{
+    color: #f00;
+    font-family: 'Special Elite', cursive;
+    text-align: center;
+}
+.subtituloTecnolocias{
+    color: #fff;
+    font-family: 'Special Elite', cursive;
+    text-align: center;
+}
+.listaTecnologias{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+}
+.TecnologiaList{
+  color: #fff;
+  font-family: 'Special Elite', cursive;
+  height: 300px;
+  width: 225px;
+  background-color: #111;
+  border:solid #f00 1px;
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: 1s;
+  
+}
+.TecnologiaList:hover{
+    box-shadow: #f00 0px 0px 20px 0px;
+}
+
+.tecnologia{
+    color: #f00;
+    font-family: 'Special Elite', cursive;
+}
+.sobreTecnologia{
+    color: #fff;
+    font-size: .75rem;
 }

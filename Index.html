@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Born Of Putridy</title>
+    <link rel="icon" type="image/png" href="./imgs/Logotipo Loja Online (2)-PhotoRoom.png-PhotoRoom.png" />
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -81,51 +82,95 @@
 
 
         <section id="Items">
-            <h1 class="tituloItems">Items</h1>
-            <p class="sobreItems">o jogo contara com 30 items divididos entre utilizaveis,consumiveis,armas e as chamadas Reliquias</p>
-            <ul></ul>
-        </section>
-
-
-
-
-
-
-
-
-        
-        <section id="Tecno">
-            <h1>Tecnologias</h1>
-            <h2>até o momento estou utilizando 3 tecnologias sendo elas</h2>
-            <ul>
+            <div>
+                <h1 class="tituloItems">Items</h1>
+                <p class="sobreItems">o jogo contara com 30 items divididos entre utilizaveis,consumiveis,armas e as chamadas Reliquias</p>
+            </div>
+            <ul class="ItemsLista js-scroll">
                 <div>
-                    <h1>React</h1>
-                    <p>"O React é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web"
+                    <h1 class="tiposItems">Armas</h1>
+                    <ul class="armas">
+                        <li class="item" id="corrente"><img class="imgItens" src="/imgs/corrente.png" alt=""></li>
+                        <li class="item" id="faca"><img class="imgItens" src="/imgs/faca.png" alt=""></li>
+                        <li class="item" id="machado"><img class="imgItens" src="/imgs/machado comum.png" alt=""></li>
+                        <li class="item">?</li>
+                        <li class="item">?</li>
+                        <li class="item">?</li>
+                        <li class="item">?</li>
+                        <li class="item">?</li>
+                        <li class="item">?</li>
+                        <li class="item">?</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="tiposItems">Consumiveis</h1>
+                    <ul class="utilizaveis">
+                        <li class="item"><img class="imgItens" src="/imgs/Aspirina.png" alt=""></li>
+                        <li class="item"><img class="imgItens" src="/imgs/curativo.png" alt=""></li>
+                        <li class="item"><img class="imgItens" src="/imgs/Chaves do carro.png" alt=""></li>
+                        <li class="item">?</li>
+                        <li class="item">?</li>
+                        <li class="item">?</li>
+                        <li class="item">?</li>
+                        <li class="item">?</li>
+                        <li class="item">?</li>
+                        <li class="item">?</li>
+                        <li class="item">?</li>
+                        <li class="item">?</li>
+                        <li class="item">?</li>
+                        <li class="item">?</li>
+                        <li class="item">?</li>
+                        <li class="item">?</li>
+                        <li class="item">?</li>
+                    </ul>
+                </div>   
+                <div>
+                    <h1 class="tiposItems">Reliquias</h1>
+                    <ul class="reliquias">
+                        <li class="item">?</li>
+                        <li class="item">?</li>
+                        <li class="item">?</li>
+                    </ul>       
+                </div>        
+            </ul>
+        </section> 
+        <section id="Tecno">
+            <div>
+                <h1 class="tituloTecnologias">Tecnologias</h1>
+                <h2 class="subtituloTecnolocias">até o momento estou utilizando 4 tecnologias sendo elas</h2>
+            </div>
+            <ul class="listaTecnologias js-scroll">
+                <li class="TecnologiaList">
+                    <img src="/imgs/icons8-reagir-50.png" alt="">
+                    <h1 class="tecnologia">React</h1>
+                    <p class="sobreTecnologia">"O React é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web"
                         React esta sendo usado para a contrução do projeto sendo
                         ela a tecnologia mais usada utilizada para criar o projeto
                         particulamente todo em si.
                     </p>
-                </div>
-                <div>
-                    <h1>Redux</h1>
-                    <p>"Redux é uma biblioteca JavaScript de código aberto para gerenciar o estado do aplicativo"
+                </li>
+                <li class="TecnologiaList">
+                    <img src="/imgs/icons8-redux-50.png" alt="">
+                    <h1 class="tecnologia">Redux</h1>
+                    <p class="sobreTecnologia">"Redux é uma biblioteca JavaScript de código aberto para gerenciar o estado do aplicativo"
                         Redux esta sendo utilizado para a criação de funções e interaçoes com o inventario alem de ser feito por tal.
                     </p>
-                    </div>
-                <div>
-                    <h1>CSS</h1>
-                    <p>"Cascading Style Sheets é um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags
-                         HTML ou ficar contido dentro das tags de styleTambém é possível, adicionar estilos adicionando um link para um arquivo CSS que contém os estilos."
+                </li>
+                <li class="TecnologiaList">
+                    <img src="/imgs/icons8-css3-50.png" alt="">
+                    <h1 class="tecnologia">CSS</h1>
+                    <p class="sobreTecnologia">"Cascading Style Sheets é um mecanismo para adicionar estilos a uma página web."
                         esta sendo utilizada para estilização do site como localização do iventario,cor do fundo animações e etc.
 
                     </p>
-                </div>
-                <div>
-                    <h1>Canva</h1>
-                    <p>"Canva é uma plataforma de design gráfico que permite aos usuários criar gráficos de mídia social, apresentações, infográficos, pôsteres e outros conteúdos visuais"
+                </li>
+                <li class="TecnologiaList">
+                    <img src="/imgs/icons8-canva-50.png" alt="">
+                    <h1 class="tecnologia">Canva</h1>
+                    <p class="sobreTecnologia">"Canva é uma plataforma de design gráfico que permite aos usuários criar gráficos de mídia social, apresentações, infográficos, pôsteres e outros conteúdos visuais"
                         Canva esta sendo utilizado para a criação da logo dos items em geral
                     </p>
-                </div>
+                </li>
             </ul>
         </section>
     </main>

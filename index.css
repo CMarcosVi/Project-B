@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Astloch:wght@400;700&family=Cinzel+Decorative&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +8,8 @@
     font-family: 'Cardo', serif;
     list-style: none;
     scroll-behavior: smooth;
+    font-family: 'Astloch', cursive;
+    font-weight: bold;
 }
 body{
     height: 100vh;
@@ -18,9 +21,6 @@ header{
     width: 100%;
     color: #fff;
     z-index: 2;
-}
-.tituloJogo{
-    font-family: 'Cardo', serif;
 }
 .navbar{
     display: flex;
@@ -64,6 +64,7 @@ header{
     font-size: 4rem;
     animation: aparecer 5s;
     animation-timing-function: linear;
+    font-family: 'Astloch', cursive;
 }
 #Historia{
     height: 100vh;
@@ -393,9 +394,11 @@ header{
 
 .tecnologia{
     color: #f00;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Astloch', cursive;
+    font-weight: bold;
 }
 .sobreTecnologia{
+    font-family: 'Special Elite', cursive;
     color: #fff;
     font-size: .75rem;
 }

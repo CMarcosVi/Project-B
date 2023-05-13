@@ -38,6 +38,10 @@ header{
     text-decoration: none;
     transition: 1s;
 }
+.tituloJogo{
+    color: red;
+    font-size: 1.5rem;
+}
 .linkBar:hover{
     color: #f00;
     transition: 1s;
@@ -52,7 +56,7 @@ header{
     justify-content: center;
     height: 100vh;
     font-family: 'Special Elite', cursive;
-    background-image: url(./imgs/fundo1.jpg);
+    background-image: url('imgs/fundo1.jpg');
     background-size: cover;
     color: #fff;
 }
@@ -61,6 +65,7 @@ header{
     color: red;
 }
 .TituloGame{
+    
     font-size: 4rem;
     animation: aparecer 5s;
     animation-timing-function: linear;
@@ -91,8 +96,7 @@ header{
     height: 210px;
     width: 210px;
     box-shadow: #f00 0px 0px 10px 10px;
-    animation: rotacao 10s infinite;
-    
+    animation: rotacao 10s infinite;  
 }
 .cicruloNaoAnimado{
     position:relative;
@@ -110,7 +114,6 @@ header{
     left: -66.5% ;
 }
 .carta{
- 
     opacity: 0;
     display: flex;
     justify-content: center;
@@ -229,31 +232,31 @@ header{
     font-family: 'Special Elite', cursive;
 }
 #ato1:hover{
-    background-image: url(./imgs/13239016_17Z_2102.w026.n002.180B.p1.180.jpg);
+    background-image: url(/imgs/fundo1.jpg);
     background-size: cover;
     background-position: center;
     transition: 5s;
 }
 #ato2:hover{
-    background-image: url(./imgs/24Z_2103.w026.n002.244B.p1.244.jpg);
+    background-image: url(/imgs/24Z_2103.w026.n002.244B.p1.244.jpg);
     background-size: cover;
     background-position: center;
     transition: 5s;
 }
 #ato3:hover{
-    background-image: url(./imgs/40Z_2105.w026.n002.450B.p0.450.jpg);
+    background-image: url(/imgs/40Z_2105.w026.n002.450B.p0.450.jpg);
     background-size: cover;
     background-position: center;
     transition: 5s;
 }
 #ato4:hover{
-    background-image: url(./imgs/2212.w015.n003.1098A.p30.1098.jpg);
+    background-image: url(/imgs/2212.w015.n003.1098A.p30.1098.jpg);
     background-size: cover;
     background-position: center;
     transition: 5s;
 }
 #ato5:hover{
-    background-image: url(./imgs/v903-techi-34b.jpg);
+    background-image: url(/imgs/v903-techi-34b.jpg);
     background-size: cover;
     background-position: center;
     transition: 5s;
@@ -401,4 +404,185 @@ header{
     font-family: 'Special Elite', cursive;
     color: #fff;
     font-size: .75rem;
+}
+
+@media screen and (max-width: 900px) {
+    .navbar{
+        display: flex;
+        justify-content: space-evenly;
+        margin: .5rem 5rem;
+        z-index: 99;
+    }
+    
+    .linkBar{
+        margin: 0 .5rem;
+    }
+    .tituloJogo{
+        color: red;
+        font-size: 1rem;
+    }
+    .tituloItems{
+        font-size: 1.5rem;
+    }
+    .sobreItems{
+        font-size: .65rem;
+    }
+    #Divisao{
+        display: grid;
+        flex-direction: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .listaDeAtos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .atos{
+        margin: 1rem .5rem;
+        height: 150px;
+    }
+    #Tecno{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .atoTitulo{
+        font-size:1.5rem;
+    }
+    .historiaJogo{
+        text-align: center;
+        font-size:1.5rem;
+    }
+    .interfaceTitulo{
+        font-size:1.5rem;
+    }
+    .tituloTecnologias{
+        font-size: 1.5rem;
+    }
+    .subtituloTecnolocias{
+        font-size: .65rem;
+    }
+    .listaTecnologias{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .TecnologiaList{
+        height: 200px;
+        width: 225px;
+        margin: 1rem auto;
+    }
+    .sobreTecnologia{
+        font-size: 0.65rem;
+    }
+
+    .item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+        width: 35px;
+        background-color: #000;
+        border: solid 2px #f00;
+        border-radius: .5rem;
+        color: #f00;
+        font-family: 'Special Elite', cursive;
+        margin: .25rem;
+        transform: scale(1);
+        transition: .5s;
+    }
+    .imagemCarta{
+        height: 275px;
+    }
+    .objetosModoHistoria{
+        display: flex;
+        flex-direction: column;
+    }
+    .cicruloAnimado{
+        position:relative;
+        border: #f00 solid;
+        height: 100px;
+        width: 100px;
+        box-shadow: #f00 0px 0px 10px 10px;
+        animation: rotacao 10s infinite;  
+    }
+    .cicruloNaoAnimado{
+        position:relative;
+        top: 21px;
+        left: -40.25%;
+        border: #f00 double;
+        height: 60px;
+        width: 60px;
+        box-shadow: #f00 1px 1px 10px 10px;
+    }
+    .imgCaveira{
+        position:relative;
+        height: 40px;
+        top: 32px;
+        left: -64.5% ;
+    }
+    .caveira{
+        position: relative;
+        left: 60px;
+        display: flex;
+        margin-top: 2rem;
+        
+    }
+    .historiaDojogo{
+        margin-top: 4rem;
+        margin-left: .5rem;
+        font-size: .41rem;
+        width: 150px;
+    }
+    .imgItens{
+        height: 25px;
+        width: 25px;
+    }
+    .reliquias{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 675px) {
+    .interfaceList{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .interface{
+        margin: .25rem 2rem;
+    }
+    .interfaceContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;  
+    }
+    #Interface{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .imgInterface{
+        height: 150px;
+        width: 300px;
+    }
+    .listaDeAtos{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #Divisao{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .atos{
+        width: auto;
+        height: 60px;
+        margin: .25rem;
+    }
+
 }

@@ -586,3 +586,44 @@ header{
     }
 
 }
+
+@media screen and (max-width: 675px){
+    .caveira{
+        position: relative;
+        left: 60px;
+        display: flex;
+        margin-top: 5rem;
+        
+    }
+    .imagemCarta{
+        height: 350px;
+    }
+    .historiaDojogo{
+        margin-top: 4rem;
+        margin-left: .5rem;
+        font-size: .55rem;
+        width: 200px;
+    }
+    #Interface{
+        justify-content: space-evenly;
+    }
+    .utilizaveis{
+        display: grid;
+        margin: 0 1rem;
+    }
+    .tiposItems{
+        text-align: center;
+    }
+    .listaTecnologias{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .TecnologiaList{
+        display: flex;
+        align-items: center;
+        height: 100px;
+        width: auto;
+    }
+    
+}

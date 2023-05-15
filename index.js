@@ -1,3 +1,17 @@
+const btnNav = document.querySelector('.bnt-navbar');
+const navBar = document.querySelector('.navList')
+function navBarList(){
+  if(navBar.classList.contains('desativado')){
+    navBar.classList.remove('desativado')
+    navBar.classList.add('ativado')
+  }else{
+    navBar.classList.remove('ativado')
+    navBar.classList.add('desativado')
+
+  }
+}
+navBarList()
+
 function typeWrite(targetElement) {
   const textArray = targetElement.innerHTML.split('');
   targetElement.innerHTML = '';

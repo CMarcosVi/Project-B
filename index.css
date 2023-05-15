@@ -558,6 +558,44 @@ header{
 }
 
 @media screen and (max-width: 675px) {
+    .navList{
+        display: none;
+    }
+    .bnt-navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+        border: #f00 1px solid;
+        border-radius: 2rem;
+        background-color: #000;
+        cursor: pointer;
+        transition: 1s;
+        z-index: 99;
+    }
+    .bnt-navbar:hover{
+        border: #000 1px solid;
+        border-radius: 2rem;
+        background-color: #fff;
+        transition: 1s;
+    }
+    .btn-navbar-logo{
+        height: 30px;
+    }
+    .desativado{
+        display: none;
+    }
+    .ativado{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #0009;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+    }
     .interfaceList{
         display: grid;
         grid-template-columns: 1fr 1fr;

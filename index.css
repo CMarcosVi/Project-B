@@ -49,6 +49,9 @@ header{
 .linkBar::hover{
     color: red;
 }
+.bnt-navbar{
+    display:none;
+}
 #Home{
     display: flex;
     flex-direction: column;

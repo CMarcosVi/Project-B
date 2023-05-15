@@ -561,6 +561,9 @@ header{
 }
 
 @media screen and (max-width: 675px) {
+    .tituloJogo{
+        margin: .5rem 5rem 0rem 0rem;
+    }
     .navList{
         display: none;
     }

@@ -75,7 +75,9 @@ header{
     height: 100vh;
     color: #fff;
     padding: 3rem;
-
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%), url('imgs/fundo_cemiterio.jpg');
+    background-size: cover;
+    background-position: center;
 }
 .historiaJogo{
     font-family: 'Special Elite', cursive;
@@ -176,6 +178,9 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%), url('imgs/fundo_porta.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .interfaceTitulo{
@@ -204,6 +209,9 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%), url('imgs/Design\ sem\ nome\ \(15\).jpg');
+    background-size: cover;
+    background-position: center;
 }
 .atoTitulo{
     font-family: 'Special Elite', cursive;
@@ -232,31 +240,31 @@ header{
     font-family: 'Special Elite', cursive;
 }
 #ato1:hover{
-    background-image: url('imgs/fundo1.jpg');
+    background-image: url(/imgs/fundo1.jpg);
     background-size: cover;
     background-position: center;
     transition: 5s;
 }
 #ato2:hover{
-    background-image: url('imgs/24Z_2103.w026.n002.244B.p1.244.jpg');
+    background-image: url(/imgs/24Z_2103.w026.n002.244B.p1.244.jpg);
     background-size: cover;
     background-position: center;
     transition: 5s;
 }
 #ato3:hover{
-    background-image: url('imgs/40Z_2105.w026.n002.450B.p0.450.jpg');
+    background-image: url(/imgs/40Z_2105.w026.n002.450B.p0.450.jpg);
     background-size: cover;
     background-position: center;
     transition: 5s;
 }
 #ato4:hover{
-    background-image: url('imgs/2212.w015.n003.1098A.p30.1098.jpg');
+    background-image: url(/imgs/2212.w015.n003.1098A.p30.1098.jpg);
     background-size: cover;
     background-position: center;
     transition: 5s;
 }
 #ato5:hover{
-    background-image: url('imgs/v903-techi-34b.jpg');
+    background-image: url(/imgs/v903-techi-34b.jpg);
     background-size: cover;
     background-position: center;
     transition: 5s;
@@ -270,6 +278,7 @@ header{
     flex-direction: column;
     justify-content: space-evenly;
     height: 100vh;
+    
 }
 .tituloItems{
     font-family: 'Special Elite', cursive;

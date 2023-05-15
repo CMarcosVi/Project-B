@@ -281,6 +281,9 @@ header{
     flex-direction: column;
     justify-content: space-evenly;
     height: 100vh;
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%), url('imgs/Items.jpg');
+    background-size: cover;
+    background-position: center;
     
 }
 .tituloItems{

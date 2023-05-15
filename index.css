@@ -75,7 +75,8 @@ header{
     height: 100vh;
     color: #fff;
     padding: 3rem;
-    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%), url('imgs/fundo_cemiterio.jpg');
+    background-image:url('imgs/fundo_cemiterio.jpg');
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%);
     background-size: cover;
     background-position: center;
 }

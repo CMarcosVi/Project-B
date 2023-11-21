@@ -74,6 +74,11 @@ header{
     animation-timing-function: linear;
     font-family: 'Astloch', cursive;
 }
+.versaoJogo{
+    font-size: .75rem;
+    color: #fff;
+    text-align: center;
+}
 #Historia{
     height: 100vh;
     color: #fff;
